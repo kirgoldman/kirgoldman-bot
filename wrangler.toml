@@ -1,0 +1,22 @@
+name = "kirgoldman-bot"
+main = "worker.js"
+compatibility_date = "2024-11-01"
+
+# Runs every minute to check for due reminders / scheduled messages
+[triggers]
+crons = ["* * * * *"]
+
+# Non-secret config. BASE_URL must be the final public URL of this worker.
+# After the first deploy, go to Workers & Pages -> kirgoldman-bot -> Settings ->
+# Variables and Secrets, and update BASE_URL there (no redeploy/code push needed).
+[vars]
+BASE_URL = "https://kirgoldman-bot.YOUR-SUBDOMAIN.workers.dev"
+
+# Left blank on purpose: the "Deploy to Cloudflare" button creates a new D1
+# database named below and fills this in automatically, then runs the SQL
+# files in /migrations to set up the tables.
+[[d1_databases]]
+binding = "DB"
+database_name = "kirgoldman-bot-db"
+database_id = ""
+migrations_dir = "migrations"
