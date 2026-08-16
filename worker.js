@@ -33,7 +33,7 @@ const LINKS = {
 // NOTE: these strings use Telegram HTML formatting (parse_mode: "HTML").
 // Allowed tags: <b>, <i>, <u>, <s>, <blockquote>, <a href="">, <code>. Escape & < > if you add raw text.
 
-const MSG1_TEXT = `🔥 <b>СЛИВ КЕЙСА</b>: Как я нашёл лазейку в рекламе для онлайн-школ, которая даёт регистрации по $2,8 с ROMI до 253%
+const MSG1_TEXT = `Статья с разбором кейса: ROMI 253% в онлайн-школе
 
 Привет! Я Кир Голдман, таргетолог-маркетолог по трафику для онлайн-школ.
 
