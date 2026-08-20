@@ -10,7 +10,7 @@ crons = ["* * * * *"]
 # After the first deploy, go to Workers & Pages -> kirgoldman-bot -> Settings ->
 # Variables and Secrets, and update BASE_URL there (no redeploy/code push needed).
 [vars]
-BASE_URL = "https://kirgoldman-bot.YOUR-SUBDOMAIN.workers.dev"
+BASE_URL = "https://kirgoldman-bot-worker.kirilech.workers.dev"
 
 # Left blank on purpose: the "Deploy to Cloudflare" button creates a new D1
 # database named below and fills this in automatically, then runs the SQL
